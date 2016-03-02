@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export GOVER := $(shell debian/helpers/getver.pl)
+golang_archs = $(shell debian/helpers/getgoarches.pl)
+
+IS_GOLANG_ARCH := true
+ifeq (,$(filter $(DEB_HOST_ARCH),$(golang_archs)))
+        IS_GOLANG_ARCH := false
+endif
+
+%:
+	dh $@
+
+override_dh_clean:
+	dh_clean
+	rm -f debian/golang-any.links
+
+override_dh_prep:
+	dh_prep
+ifeq (false, $(IS_GOLANG_ARCH))
+	cp debian/golang-any.links.gccgo debian/golang-any.links
+endif
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Vgolang:GOVER=$(GOVER)

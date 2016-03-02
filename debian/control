@@ -1,0 +1,136 @@
+Source: golang-defaults
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), dh-exec
+Standards-Version: 3.9.6
+Homepage: https://golang.org
+
+Package: golang-go
+Architecture: amd64 arm64 armel armhf i386 ppc64 ppc64el
+Depends: golang-${golang:GOVER}-go,
+         golang-src (>= ${source:Version}),
+         ${misc:Depends}
+Breaks: gccgo-5 (<< 5.3.1-12),
+        golang-go (<= 2:1.6.1-2),
+        golang-go-darwin-386,
+        golang-go-darwin-amd64,
+        golang-go-freebsd-386,
+        golang-go-freebsd-amd64,
+        golang-go-freebsd-arm,
+        golang-go-linux-386,
+        golang-go-linux-amd64,
+        golang-go-linux-arm,
+        golang-go-netbsd-386,
+        golang-go-netbsd-amd64,
+        golang-go-windows-386,
+        golang-go-windows-amd64,
+        golang-go.tools (<< 1:0.0~git20151026.0.0f9d71c-1~),
+        golang-golang-x-tools (<< 1:0.0~git20151026.0.0f9d71c-1~)
+Replaces: golang-go-darwin-386,
+          golang-go-darwin-amd64,
+          golang-go-freebsd-386,
+          golang-go-freebsd-amd64,
+          golang-go-freebsd-arm,
+          golang-go-linux-386,
+          golang-go-linux-amd64,
+          golang-go-linux-arm,
+          golang-go-netbsd-386,
+          golang-go-netbsd-amd64,
+          golang-go-windows-386,
+          golang-go-windows-amd64,
+          golang-go.tools (<< 1:0.0~git20151026.0.0f9d71c-1~),
+          golang-golang-x-tools (<< 1:0.0~git20151026.0.0f9d71c-1~)
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go toolchain and
+ compiled standard library. It is only built on architectures that have a
+ native toolchain ("gc compiler"). Packages that want to build with whichever
+ of gc or gccgo is available should depend on golang-any.
+
+Package: golang-any
+Architecture: any
+Depends: gccgo [!armel !armhf !amd64 !i386 !arm64 !ppc64 !ppc64el],
+         golang-go [armel armhf amd64 i386 arm64 ppc64 ppc64el],
+         ${misc:Depends}
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go toolchain and
+ compiled standard library or gccgo on architectures that do not have a native
+ toolchain ("gc compiler") port. Because the gccgo and Go releases are not on
+ the same schedule, it is not guaranteed that the version of the Go language
+ provided by the version of gccgo that this package depends upon will match the
+ version of this package.
+
+Package: golang-src
+Architecture: amd64 arm64 armel armhf i386 ppc64 ppc64el
+Depends: golang-${golang:GOVER}-src, ${misc:Depends}
+Description: Go programming language - source files
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go standard library
+ source code, which is needed for the go build process.
+
+Package: golang-doc
+Depends: golang-${golang:GOVER}-doc, golang-go, ${misc:Depends}
+Architecture: all
+Section: doc
+Description: Go programming language - documentation
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a fast,
+ statically typed, compiled language that feels like a dynamically
+ typed, interpreted language.
+ .
+ This is a dependency package that depends on the default Go documentation. You
+ can view the formatted documentation by installing the golang-golang-x-tools
+ package, running "godoc --http=:6060", and then visiting
+ http://localhost:6060/doc/install.html.
+
+Package: golang
+Depends: golang-${golang:GOVER},
+         golang-doc (>= ${source:Version}),
+         golang-go (>= ${source:Version}),
+         golang-src (>= ${source:Version}),
+         ${misc:Depends}
+Architecture: all
+Description: Go programming language compiler - metapackage
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a
+ dynamically typed, interpreted language.
+ .
+ This package is a metapackage that, when installed, guarantees
+ that (most of) a full Go development environment is installed.
