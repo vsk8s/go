@@ -1,7 +1,10 @@
 Source: golang-defaults
 Section: devel
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Go Compiler Team <pkg-golang-devel@lists.alioth.debian.org>
+Uploaders: Michael Stapelberg <stapelberg@debian.org>,
+           Paul Tagliamonte <paultag@debian.org>,
+           Tianon Gravi <tianon@debian.org>
 Build-Depends: debhelper (>= 9), dh-exec
 Standards-Version: 3.9.6
 Homepage: https://golang.org
