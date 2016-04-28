@@ -16,7 +16,6 @@ Depends: golang-${golang:GOVER}-go,
          golang-src (>= ${source:Version}),
          ${misc:Depends}
 Breaks: gccgo-5 (<< 5.3.1-12),
-        golang-go (<= 2:1.6.1-2),
         golang-go-darwin-386,
         golang-go-darwin-amd64,
         golang-go-freebsd-386,
