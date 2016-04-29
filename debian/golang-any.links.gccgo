@@ -1,3 +1,2 @@
-#!/usr/bin/dh-exec
-usr/bin/go-5 usr/bin/go
-usr/bin/gofmt-5 usr/bin/gofmt
+usr/bin/go-6 usr/bin/go
+usr/bin/gofmt-6 usr/bin/gofmt
