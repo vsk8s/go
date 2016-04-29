@@ -64,7 +64,7 @@ Architecture: any
 Depends: gccgo [!armel !armhf !amd64 !i386 !arm64 !ppc64 !ppc64el],
          golang-go [armel armhf amd64 i386 arm64 ppc64 ppc64el],
          ${misc:Depends}
-Description: Go programming language compiler, linker, compiled stdlib
+Description: Go programming language -- gccgo on "non-Go" platforms
  The Go programming language is an open source project to make programmers more
  productive. Go is expressive, concise, clean, and efficient. Its concurrency
  mechanisms make it easy to write programs that get the most out of multicore
