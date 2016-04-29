@@ -124,7 +124,7 @@ Depends: golang-${golang:GOVER},
          golang-go (>= ${source:Version}),
          golang-src (>= ${source:Version}),
          ${misc:Depends}
-Architecture: all
+Architecture: amd64 arm64 armel armhf i386 ppc64 ppc64el
 Description: Go programming language compiler - metapackage
  The Go programming language is an open source project to make
  programmers more productive. Go is expressive, concise, clean, and
