@@ -12,10 +12,6 @@ endif
 %:
 	dh $@
 
-override_dh_clean:
-	dh_clean
-	rm -f debian/golang-any.links
-
 override_dh_prep:
 	dh_prep
 ifeq (false, $(IS_GOLANG_ARCH))
