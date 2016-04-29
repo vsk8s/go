@@ -96,7 +96,9 @@ Description: Go programming language - source files
  source code, which is needed for the go build process.
 
 Package: golang-doc
-Depends: golang-${golang:GOVER}-doc, golang-go, ${misc:Depends}
+Depends: golang-${golang:GOVER}-doc,
+         golang-go (>= ${source:Version}),
+         ${misc:Depends}
 Architecture: all
 Section: doc
 Description: Go programming language - documentation
