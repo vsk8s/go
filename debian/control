@@ -7,7 +7,7 @@ Uploaders: Michael Hudson-Doyle <michael.hudson@ubuntu.com>,
            Paul Tagliamonte <paultag@debian.org>,
            Tianon Gravi <tianon@debian.org>
 Build-Depends: debhelper (>= 9), dh-exec
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://golang.org
 
 Package: golang-go
