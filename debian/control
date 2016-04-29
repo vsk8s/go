@@ -15,7 +15,8 @@ Architecture: amd64 arm64 armel armhf i386 ppc64 ppc64el
 Depends: golang-${golang:GOVER}-go,
          golang-src (>= ${source:Version}),
          ${misc:Depends}
-Breaks: gccgo-5 (<< 5.3.1-12),
+Breaks: gccgo-5 (<< 5.3.1-12~),
+        gccgo-6 (<< 6-20160319-1~),
         golang-go-darwin-386,
         golang-go-darwin-amd64,
         golang-go-freebsd-386,
