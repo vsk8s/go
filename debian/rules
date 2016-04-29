@@ -2,10 +2,10 @@
 # -*- makefile -*-
 
 export GOVER := $(shell debian/helpers/getver.pl)
-golang_archs = $(shell debian/helpers/getgoarches.pl)
+golang_arches := $(shell debian/helpers/getgoarches.pl)
 
 IS_GOLANG_ARCH := true
-ifeq (,$(filter $(DEB_HOST_ARCH),$(golang_archs)))
+ifeq (,$(filter $(DEB_HOST_ARCH),$(golang_arches)))
         IS_GOLANG_ARCH := false
 endif
 
