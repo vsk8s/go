@@ -6,7 +6,7 @@ golang_arches := $(shell debian/helpers/getgoarches.pl)
 
 IS_GOLANG_ARCH := true
 ifeq (,$(filter $(DEB_HOST_ARCH),$(golang_arches)))
-        IS_GOLANG_ARCH := false
+	IS_GOLANG_ARCH := false
 endif
 
 %:
