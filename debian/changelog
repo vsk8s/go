@@ -1,6 +1,11 @@
 golang-defaults (2:1.6.1+2) UNRELEASED; urgency=medium
 
+  [ Tianon Gravi ]
   * Add missing Vcs-Browser and Vcs-Git
+
+  [ Michael Hudson-Doyle ]
+  * Add d/golang-go.maintscript to properly handle transition of /usr/lib/go
+    from directory to symlink. (Closes: 832160)
 
  -- Tianon Gravi <tianon@debian.org>  Mon, 11 Jul 2016 07:49:56 -0700
 
