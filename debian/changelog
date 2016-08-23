@@ -1,7 +1,8 @@
-golang-defaults (2:1.6.1+2) UNRELEASED; urgency=medium
+golang-defaults (2:1.7~1) UNRELEASED; urgency=medium
 
   [ Tianon Gravi ]
   * Add missing Vcs-Browser and Vcs-Git
+  * Update to Go 1.7 (src:golang-1.7)
   * Add "s390x" to Architectures
 
   [ Michael Hudson-Doyle ]
