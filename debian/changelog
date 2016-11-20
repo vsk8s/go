@@ -1,3 +1,10 @@
+golang-defaults (2:1.7~3) UNRELEASED; urgency=medium
+
+  * Define a gccgo-go package that can be used to test building with gccgo on
+    any architecture. (Closes: 842254)
+
+ -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Mon, 31 Oct 2016 14:52:30 +1300
+
 golang-defaults (2:1.7~2) unstable; urgency=medium
 
   * Remove "s390x" again (Closes: #844258)
