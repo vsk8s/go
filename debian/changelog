@@ -1,9 +1,9 @@
-golang-defaults (2:1.7~3) UNRELEASED; urgency=medium
+golang-defaults (2:1.7~3) unstable; urgency=medium
 
   * Define a gccgo-go package that can be used to test building with gccgo on
     any architecture. (Closes: 842254)
 
- -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Mon, 31 Oct 2016 14:52:30 +1300
+ -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Tue, 22 Nov 2016 09:44:29 -0800
 
 golang-defaults (2:1.7~2) unstable; urgency=medium
 
