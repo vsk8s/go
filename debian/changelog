@@ -1,8 +1,8 @@
-golang-defaults (2:1.7~4) UNRELEASED; urgency=medium
+golang-defaults (2:1.7~4) unstable; urgency=medium
 
   * Add old "golang-doc" to Breaks/Replaces (Closes: #836991)
 
- -- Tianon Gravi <tianon@debian.org>  Tue, 06 Dec 2016 08:19:31 -0800
+ -- Tianon Gravi <tianon@debian.org>  Tue, 06 Dec 2016 23:21:37 -0800
 
 golang-defaults (2:1.7~3) unstable; urgency=medium
 
