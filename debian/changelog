@@ -1,8 +1,12 @@
-golang-defaults (2:1.8~4) UNRELEASED; urgency=medium
+golang-defaults (2:1.9~1) unstable; urgency=medium
 
+  [ Martín Ferrari ]
   * Add myself to Uploaders.
 
- -- Martín Ferrari <tincho@debian.org>  Thu, 20 Jul 2017 17:14:12 +0000
+  [ Michael Stapelberg ]
+  * Update to Go 1.9 (src:golang-1.9)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Fri, 15 Sep 2017 07:53:10 +0200
 
 golang-defaults (2:1.8~3) unstable; urgency=medium
 
