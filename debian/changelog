@@ -1,9 +1,9 @@
-golang-defaults (2:1.9~2) UNRELEASED; urgency=medium
+golang-defaults (2:1.9~2) unstable; urgency=medium
 
   * Add mips, mips64el and mipsel to golang-go Architectures.
     (Closes: #834002, #841645)
 
- -- Michael Hudson-Doyle <mwhudson@debian.org>  Mon, 11 Dec 2017 09:11:01 +1300
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Mon, 11 Dec 2017 09:15:36 +1300
 
 golang-defaults (2:1.9~1) unstable; urgency=medium
 
