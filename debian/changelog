@@ -1,3 +1,9 @@
+golang-defaults (2:1.9~3) UNRELEASED; urgency=medium
+
+  * Use my @debian.org address in Uploaders.
+
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Mon, 11 Dec 2017 09:20:57 +1300
+
 golang-defaults (2:1.9~2) unstable; urgency=medium
 
   * Add mips, mips64el and mipsel to golang-go Architectures.
