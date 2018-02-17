@@ -1,8 +1,12 @@
-golang-defaults (2:1.9~3) UNRELEASED; urgency=medium
+golang-defaults (2:1.10~1) unstable; urgency=medium
 
+  [ Michael Hudson-Doyle ]
   * Use my @debian.org address in Uploaders.
 
- -- Michael Hudson-Doyle <mwhudson@debian.org>  Mon, 11 Dec 2017 09:20:57 +1300
+  [ Michael Stapelberg ]
+  * Update to Go 1.10 (src:golang-1.10)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 17 Feb 2018 13:06:01 +0100
 
 golang-defaults (2:1.9~2) unstable; urgency=medium
 
