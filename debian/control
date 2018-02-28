@@ -14,7 +14,7 @@ Vcs-Browser: https://anonscm.debian.org/cgit/pkg-golang/golang-defaults.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-golang/golang-defaults.git
 
 Package: golang-go
-Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64 ppc64el s390x
+Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x
 Conflicts: gccgo-go
 Depends: golang-${golang:GOVER}-go,
          golang-src (>= ${source:Version}),
@@ -105,7 +105,7 @@ Description: Go programming language -- gccgo
  It conflicts with golang-go.
 
 Package: golang-src
-Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64 ppc64el s390x
+Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x
 Depends: golang-${golang:GOVER}-src, ${misc:Depends}
 Description: Go programming language - source files
  The Go programming language is an open source project to make programmers more
@@ -148,7 +148,7 @@ Depends: golang-${golang:GOVER},
          golang-go (>= ${source:Version}),
          golang-src (>= ${source:Version}),
          ${misc:Depends}
-Architecture: amd64 arm64 armel armhf i386 mips mips64 mipsel ppc64 ppc64el s390x
+Architecture: amd64 arm64 armel armhf i386 mips mips64 mipsel ppc64el s390x
 Description: Go programming language compiler - metapackage
  The Go programming language is an open source project to make
  programmers more productive. Go is expressive, concise, clean, and

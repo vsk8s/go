@@ -1,3 +1,10 @@
+golang-defaults (2:1.10~5) UNRELEASED; urgency=medium
+
+  * Remove ppc64 from golang architectures as upstream's minimum ISA
+    requirement now exceeds Debian's.
+
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Thu, 01 Mar 2018 10:50:36 +1300
+
 golang-defaults (2:1.10~4) unstable; urgency=medium
 
   * Enable golang and golang-src on s390x too.
