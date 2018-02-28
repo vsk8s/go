@@ -1,3 +1,9 @@
+golang-defaults (2:1.10~3) UNRELEASED; urgency=medium
+
+  * Have gccgo-go depend on gccgo-8.
+
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Wed, 28 Feb 2018 22:01:08 +1300
+
 golang-defaults (2:1.10~2) unstable; urgency=medium
 
   * Enable golang-go on s390x (Thanks cbmuser)

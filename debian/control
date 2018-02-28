@@ -89,7 +89,7 @@ Description: Go programming language -- gccgo on "non-Go" platforms
 
 Package: gccgo-go
 Architecture: any
-Depends: gccgo-7, ${misc:Depends}
+Depends: gccgo-8, ${misc:Depends}
 Conflicts: golang-go
 Description: Go programming language -- gccgo
  The Go programming language is an open source project to make programmers more
