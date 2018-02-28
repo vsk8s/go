@@ -1,8 +1,8 @@
-golang-defaults (2:1.10~4) UNRELEASED; urgency=medium
+golang-defaults (2:1.10~4) unstable; urgency=medium
 
   * Enable golang and golang-src on s390x too.
 
- -- Michael Hudson-Doyle <mwhudson@debian.org>  Wed, 28 Feb 2018 22:07:36 +1300
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Wed, 28 Feb 2018 22:08:37 +1300
 
 golang-defaults (2:1.10~3) unstable; urgency=medium
 
