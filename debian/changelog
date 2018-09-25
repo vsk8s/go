@@ -1,6 +1,8 @@
 golang-defaults (2:1.10~6) UNRELEASED; urgency=medium
 
   * d/control: Update Vcs-* to point at salsa.
+  * d/helpers/getver.pl: small improvements, thanks Guillem Jover.
+    (Closes: #909604) 
 
  -- Michael Hudson-Doyle <mwhudson@debian.org>  Wed, 07 Mar 2018 12:53:11 +1300
 
