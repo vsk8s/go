@@ -8,7 +8,7 @@ Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Michael Hudson-Doyle <mwhudson@debian.org>,
            Martín Ferrari <tincho@debian.org>,
            Dr. Tobias Quathamer <toddy@debian.org>
-Build-Depends: debhelper (>= 9), dh-exec
+Build-Depends: debhelper (>= 11), dh-exec
 Standards-Version: 4.3.0
 Homepage: https://golang.org
 Vcs-Browser: https://salsa.debian.org/go-team/compiler/golang-defaults
