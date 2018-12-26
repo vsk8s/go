@@ -7,6 +7,7 @@ Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Tianon Gravi <tianon@debian.org>,
            Michael Hudson-Doyle <mwhudson@debian.org>,
            Martín Ferrari <tincho@debian.org>,
+           Dr. Tobias Quathamer <toddy@debian.org>
 Build-Depends: debhelper (>= 9), dh-exec
 Standards-Version: 3.9.8
 Homepage: https://golang.org
