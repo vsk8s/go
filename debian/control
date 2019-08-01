@@ -20,6 +20,7 @@ Conflicts: gccgo-go
 Depends: golang-${golang:GOVER}-go,
          golang-src (>= ${source:Version}),
          ${misc:Depends}
+Suggests: git
 Breaks: gccgo-5 (<< 5.3.1-12~),
         gccgo-6 (<< 6-20160319-1~),
         golang-doc (<< 2:1.6.1+1~),
