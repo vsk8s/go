@@ -1,3 +1,18 @@
+golang-defaults (2:1.12~1) unstable; urgency=medium
+
+  [ Louis-Philippe Véronneau ]
+  * d/control: Suggest installing git (Closes: #933003)
+
+  [ Anthony Fok ]
+  * Add myself to the list of Uploaders
+  * Apply "cme fix dpkg" fixes:
+    - Update debhelper dependency to "Build-Depends: debhelper-compat (= 12)"
+    - Bump Standards-Version to 4.4.0 (no change)
+  * Have gccgo-go depend on gccgo-9
+  * Update to Go 1.12 (src:golang-1.12) (Closes: #924623)
+
+ -- Anthony Fok <foka@debian.org>  Sat, 03 Aug 2019 04:27:09 -0600
+
 golang-defaults (2:1.11~1) unstable; urgency=medium
 
   * Update to Go 1.11 (src:golang-1.11)
