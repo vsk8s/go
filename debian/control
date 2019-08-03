@@ -1,6 +1,4 @@
 Source: golang-defaults
-Section: devel
-Priority: optional
 Maintainer: Go Compiler Team <team+go-compiler@tracker.debian.org>
 Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Paul Tagliamonte <paultag@debian.org>,
@@ -9,15 +7,17 @@ Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Martín Ferrari <tincho@debian.org>,
            Dr. Tobias Quathamer <toddy@debian.org>,
            Anthony Fok <foka@debian.org>
-Build-Depends: debhelper (>= 11), dh-exec
-Standards-Version: 4.3.0
-Homepage: https://golang.org
+Section: devel
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-exec
+Standards-Version: 4.4.0
 Vcs-Browser: https://salsa.debian.org/go-team/compiler/golang-defaults
 Vcs-Git: https://salsa.debian.org/go-team/compiler/golang-defaults.git
+Homepage: https://golang.org
 
 Package: golang-go
 Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x
-Conflicts: gccgo-go
 Depends: golang-${golang:GOVER}-go,
          golang-src (>= ${source:Version}),
          ${misc:Depends}
@@ -39,6 +39,7 @@ Breaks: gccgo-5 (<< 5.3.1-12~),
         golang-go-windows-amd64,
         golang-go.tools (<< 1:0.0~git20151026.0.0f9d71c-1~),
         golang-golang-x-tools (<< 1:0.0~git20151026.0.0f9d71c-1~)
+Conflicts: gccgo-go
 Replaces: golang-doc (<< 2:1.6.1+1~),
           golang-go-darwin-386,
           golang-go-darwin-amd64,
@@ -92,7 +93,8 @@ Description: Go programming language -- gccgo on "non-Go" platforms
 
 Package: gccgo-go
 Architecture: any
-Depends: gccgo-8, ${misc:Depends}
+Depends: gccgo-8,
+         ${misc:Depends}
 Conflicts: golang-go
 Description: Go programming language -- gccgo
  The Go programming language is an open source project to make programmers more
@@ -109,7 +111,8 @@ Description: Go programming language -- gccgo
 
 Package: golang-src
 Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x
-Depends: golang-${golang:GOVER}-src, ${misc:Depends}
+Depends: golang-${golang:GOVER}-src,
+         ${misc:Depends}
 Description: Go programming language - source files
  The Go programming language is an open source project to make programmers more
  productive. Go is expressive, concise, clean, and efficient. Its concurrency
@@ -124,11 +127,11 @@ Description: Go programming language - source files
  source code, which is needed for the go build process.
 
 Package: golang-doc
+Architecture: all
+Section: doc
 Depends: golang-${golang:GOVER}-doc,
          golang-go (>= ${source:Version}),
          ${misc:Depends}
-Architecture: all
-Section: doc
 Description: Go programming language - documentation
  The Go programming language is an open source project to make
  programmers more productive. Go is expressive, concise, clean, and
@@ -146,12 +149,12 @@ Description: Go programming language - documentation
  http://localhost:6060/doc/install.html.
 
 Package: golang
+Architecture: amd64 arm64 armel armhf i386 mips mips64 mipsel ppc64el s390x
 Depends: golang-${golang:GOVER},
          golang-doc (>= ${source:Version}),
          golang-go (>= ${source:Version}),
          golang-src (>= ${source:Version}),
          ${misc:Depends}
-Architecture: amd64 arm64 armel armhf i386 mips mips64 mipsel ppc64el s390x
 Description: Go programming language compiler - metapackage
  The Go programming language is an open source project to make
  programmers more productive. Go is expressive, concise, clean, and
