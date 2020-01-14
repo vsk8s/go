@@ -93,7 +93,7 @@ Description: Go programming language -- gccgo on "non-Go" platforms
 
 Package: gccgo-go
 Architecture: any
-Depends: gccgo-9,
+Depends: gccgo-8,
          ${misc:Depends}
 Conflicts: golang-go
 Description: Go programming language -- gccgo
