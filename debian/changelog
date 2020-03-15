@@ -1,3 +1,11 @@
+golang-defaults (2:1.14~1) unstable; urgency=medium
+
+  * Update to Go 1.14 (src:golang-1.14). Closes: #952831
+  * Add riscv64 to architectures of golang-go, golang-src, and golang.
+    Thanks to Aurelien Jarno <aurel32@debian.org> (Closes: #953303)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sat, 07 Mar 2020 13:47:33 +0100
+
 golang-defaults (2:1.13~1~bpo10+1) buster-backports; urgency=medium
 
   * Rebuild for buster-backports.
