@@ -1,3 +1,16 @@
+golang-defaults (2:1.14~2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump gccgo to 10
+    gccgo-10 implements go1.14
+  * Fix mips64 typo, should be mips64el.
+    Thanks Helmut Grohne for spotting this in #960842
+  * Bump debhelper-compat to 13
+  * Bump Standards-Version to 4.5.0 (no changes)
+  * Add Rules-Requires-Root
+
+ -- Shengjing Zhu <zhsj@debian.org>  Wed, 20 May 2020 19:48:35 +0800
+
 golang-defaults (2:1.14~1) unstable; urgency=medium
 
   * Update to Go 1.14 (src:golang-1.14). Closes: #952831
