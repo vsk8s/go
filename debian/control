@@ -149,7 +149,7 @@ Description: Go programming language - documentation
  http://localhost:6060/doc/install.html.
 
 Package: golang
-Architecture: amd64 arm64 armel armhf i386 mips mips64 mipsel ppc64el riscv64 s390x
+Architecture: amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el riscv64 s390x
 Depends: golang-${golang:GOVER},
          golang-doc (>= ${source:Version}),
          golang-go (>= ${source:Version}),
