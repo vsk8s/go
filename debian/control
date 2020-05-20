@@ -9,7 +9,7 @@ Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Anthony Fok <foka@debian.org>
 Section: devel
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                dh-exec
 Standards-Version: 4.4.0
 Vcs-Browser: https://salsa.debian.org/go-team/compiler/golang-defaults
