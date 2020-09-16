@@ -1,3 +1,9 @@
+golang-defaults (2:1.15~1) unstable; urgency=medium
+
+  * Update to Go 1.15.
+
+ -- Michael Hudson-Doyle <mwhudson@debian.org>  Thu, 17 Sep 2020 08:08:57 +1200
+
 golang-defaults (2:1.14~2) unstable; urgency=medium
 
   * Team upload.
