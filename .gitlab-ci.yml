@@ -28,6 +28,7 @@ deploy_to_apt:
     - sudo -u repo aptly publish update $DISTRIBUTION_VER $CI_APT_PREFIX
     - echo "Deploying package to k8s-1.20 prefix and $DISTRIBUTION_VER version"
     - sudo -u repo aptly repo add k8s-1.20 debbuild/*.deb
+    - sudo -u repo aptly publish update $DISTRIBUTION_VER k8s-1.20
   only:
     - tags
   tags:
