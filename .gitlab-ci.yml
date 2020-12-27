@@ -11,7 +11,7 @@ build:
   stage: build
   before_script:
     - apt update
-#    - apt install -y --no-install-recommends pyt
+    - apt install -y -t buster-backports debhelper-compat golang-go
   script:
     - DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -b -us -uc
     - mkdir debbuild
