@@ -11,7 +11,7 @@ build:
   stage: build
   before_script:
     - apt update
-#    - apt install -y --no-install-recommends pyt
+    - apt install -y golang-1.16 golang-any
   script:
     - dpkg-buildpackage -b -us -uc
     - mkdir debbuild
