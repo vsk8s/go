@@ -1,0 +1,32 @@
+variables:
+  DISTRIBUTION_VER: "buster"
+
+image: docker.git.sos.ethz.ch/isg/debian-ci-base-int:$DISTRIBUTION_VER
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - apt update
+    - apt install -y golang-1.15 golang-any
+  script:
+    - dpkg-buildpackage -b -us -uc
+    - mkdir debbuild
+    - mv ../*.deb debbuild/
+  artifacts:
+    paths:
+    - debbuild/*
+
+deploy_to_apt:
+  stage: deploy
+  script:
+    - echo "Deploying package to buster prefix and $DISTRIBUTION_VER version"
+    - sudo -u repo aptly repo add sos-buster debbuild/*.deb
+    - sudo -u repo aptly publish update $DISTRIBUTION_VER buster
+  only:
+    - tags
+  tags:
+    - apt
