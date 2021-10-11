@@ -11,7 +11,9 @@ build:
   stage: build
   before_script:
     - apt update
-    - apt install -y golang-1.15 golang-any
+    - echo "deb http://deb.debian.org/debian buster-backports main" >> /etc/apt/sources.list
+    - apt install -t buster-backports -y debhelper
+    - apt install -y golang-any
   script:
     - dpkg-buildpackage -b -us -uc
     - mkdir debbuild
